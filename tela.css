@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Kanit-ExtraLight';
+    src: url(fontes/Kanit-ExtraLight.ttf);
+}
+@font-face {
+    font-family: Kanit-Bold;
+    src: url(fontes/Kanit-Bold.ttf);
+}
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf);
+}
+:root{
+    --fundo:#77A253;
+    --menu:#83CD47;
+    --subt:#637851;
+    --lado:#88F72D;
+    --para:#474D41;
+
+    --letra:'Kanit-ExtraLight';
+    --titilo:'Kanit-Bold';
+    --android:'idroid';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header {
+    background-color: var(--menu);
+    font-family: var(--titulo);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px #0000001a;
+}
+header > p{ 
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+}
+header > h1{
+    padding-top: 10px;
+    text-align: center;
+    text-shadow: 2px 1px 0px #0000006c;
+    font-size: 2em;
+}
+nav{
+    background-color:var(--subt);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+nav > a{
+    flex-basis: auto;
+    font-family: var(--letra);
+    background-color: var(--menu);
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    border: .1px solid #00000071;
+    text-align: center;
+    border-radius: 15px 5px;
+    font-size: 1em;
+}
+nav > a:hover{
+    cursor: pointer;
+    background-color: var(--para);
+}
+main {
+
+    padding: 10px;
+    min-height: 100vh;
+}
+h2{
+    font-family: var(--android);
+}
+
+img, video{
+    width: 100%;
+    border-radius: 10px;
+}
+h1, h3{
+    font-family: var(--titilo);
+    text-shadow: 2px 1px 0px #0000006c;
+}
+article{
+    background-color: #e0e0e0ab;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside{
+    background-color: var(--subt);
+    font-family: var(--letra);
+    border-radius: 5px 15px;
+}
+ul{
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+    border: solid 1px #0000002d;
+    padding: 10px;
+    border-radius: 10px;
+}
+aside > h3{
+    text-align: center;
+    text-shadow: 2px 1px 0px #0000006c;
+}
+aside > p{
+    text-align: justify;
+    padding: 10px;
+}
+article > p{
+    font-family: var(--letra);
+    text-align: justify;
+    padding: 10px;
+}
+footer{
+    background-color: var(--para);
+    padding: 10px;
+    height: 50px;
+}
+footer > p{
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
